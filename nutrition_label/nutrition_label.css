@@ -48,6 +48,7 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
+/* End of reset  */
 html {
 	font-size: 28px;
 	box-sizing: border-box;
@@ -56,10 +57,10 @@ html {
 	}
 body {
 	width: 654px;
-	border: 1px solid black;
-	margin: 3px;
-	padding: 3px;
-	font-family: "Helvetica Black", Helvetica, Arial, sans-serif;
+	border: 2px solid black;
+	margin: 6px;
+	padding: .5rem;
+	font-family: Helvetica, Arial, sans-serif;
 	}
 table {
 	width: 100%;
@@ -68,30 +69,54 @@ table {
 	}
 
 .indent {
-	border-bottom: 1rem solid white;
+	border-bottom: 1px solid white;
 	width: 1rem;
+	padding: 0;
+	margin: 0;
 }
-header  {
+header {
 	border-bottom: 1rem solid black;
+}
+table:first-of-type thead  {
+	border-bottom: .5rem solid black;
+
+}
+table:last-of-type thead {
+	border-bottom: 1px solid black;
 }
 thead {
 	border-bottom: .5rem solid black;
 }
-tr {
+table:first-of-type tr {
 	border-bottom: 1px solid black;
 	padding: 0;
 	margin: 0;
 }
-h1 {
-	font-family: "Franklin Gothic Heavy", Arial, sans-serif;
-	font-size: 2rem;
-	margin: 0;
+
+table:first-of-type thead tr {
+	line-height: 1.6rem;
+}
+
+table:last-of-type tr {
+	border-bottom: none;
 	padding: 0;
+	margin: 0;
+}
+h1 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2rem;
+	margin: 4px 0;
+	font-weight: bold;
 }
 
 p {
 	margin: 0;
-	padding: 0;
+	padding: 2px;
+}
+
+aside {
+	padding: .5rem;
+	font-size: .89rem;
 }
 
 th {
@@ -105,10 +130,32 @@ td {
 	margin: 0;
 }
 
-.right-justify {
+table:first-of-type tbody {
+	border-bottom: .78rem solid black;
+}
+
+table:last-of-type tbody {
+	border-bottom: none;
+}
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+
+table:first-of-type td:last-child {
 	text-align: right;
 }
 
-tbody {
-	border-bottom: .6rem solid black;
+table:last-of-type {
+	font-size: .8rem;
+}
+
+ol {
+	padding: 4px 0;
+}
+li {
+	padding: 2px;
 }
