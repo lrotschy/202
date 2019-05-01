@@ -1,0 +1,37 @@
+body {
+  color: #FFFFCC;
+  background-color: #660066;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #FFB266;
+    font-family: courier;
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#main {
+  text-align: center;
+
+}
+
+#main-text {
+  display: inline-block;
+}
+
+li {
+  padding: 5px;
+}
+
+h2 {
+  padding: 10px;
+}
+
+h1 {
+
+  font-stretch: ultra-expanded;
+}
