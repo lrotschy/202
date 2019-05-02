@@ -91,7 +91,6 @@ li {
 table {
 	width: 100%;
 	line-height: 1.2rem;
-	border-collapse: collapse;
 	}
 table:first-of-type td:last-child {
 	text-align: right;
@@ -112,12 +111,6 @@ table:first-of-type td {
 table td.indent {
 	border-top: none;
 	width: 1rem;
-	padding: 0;
-	margin: 0;
-}
-table:last-of-type tr {
-	border-bottom: none;
-	border-top: none;
 }
 table:first-of-type thead tr {
 	line-height: 1.6rem;
