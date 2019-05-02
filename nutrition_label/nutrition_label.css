@@ -53,8 +53,6 @@ border-spacing: 0;
 html {
 	font-size: 28px;
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 	}
 body {
 	width: 654px;
@@ -72,13 +70,11 @@ h1 {
 	margin: 4px 0;
 	font-weight: bold;
 }
-p {
-	margin: 0;
-	padding: 2px;
-}
-aside {
+aside p {
 	padding: .5rem;
 	font-size: .89rem;
+	line-height: 1.1rem;
+	text-indent: -.7rem;
 }
 em {
 	font-style: italic;
@@ -94,52 +90,64 @@ li {
 }
 table {
 	width: 100%;
-	border-collapse: collapse;
 	line-height: 1.2rem;
+	border-collapse: collapse;
 	}
-	th {
-		font-weight: normal;
-		padding: 0;
-		margin: 0;
-	}
-	td {
-		padding: 0;
-		margin: 0;
-	}
-.indent {
-	border-bottom: 1px solid white;
-	width: 1rem;
+/* th {
+	font-weight: normal;
 	padding: 0;
 	margin: 0;
 }
+td {
+	padding: 0;
+	margin: 0;
+} */
 table:first-of-type td:last-child {
 	text-align: right;
 }
 table:last-of-type {
 	font-size: .8rem;
 }
-table:first-of-type tbody {
-	border-bottom: .78rem solid black;
-}
-table:last-of-type tbody {
+
+/* table:last-of-type tbody {
 	border-bottom: none;
-}
-table:first-of-type thead  {
-	border-bottom: .5rem solid black;
+} */
+table:first-of-type tbody {
+	border-top: .5rem solid black;
 }
 table:last-of-type thead {
 	border-bottom: 1px solid black;
+	text-align: left;
 }
-table:first-of-type tr {
-	border-bottom: 1px solid black;
+table:first-of-type td {
+	border-top: 1px solid black;
+	/* padding: 0;
+	margin: 0; */
+}
+table td.indent {
+	border-top: none;
+	width: 1rem;
 	padding: 0;
 	margin: 0;
+}
+table:last-of-type tr {
+	border-bottom: none;
+	border-top: none;
+	/* padding: 0;
+	margin: 0; */
 }
 table:first-of-type thead tr {
 	line-height: 1.6rem;
 }
-table:last-of-type tr {
-	border-bottom: none;
-	padding: 0;
-	margin: 0;
+/* table:first-of-type tr:first-child {
+	line-height: 1.6rem;
+} */
+table:first-of-type tr:last-child td {
+	border-bottom: 1px solid black;
+}
+/* table:first-of-type tbody {
+	border-bottom: .78rem solid black;
+} */
+table:first-of-type tfoot {
+	border-top: .78rem solid black;
 }
