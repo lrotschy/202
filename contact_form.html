@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="contact_form.css">
+  <!-- <style media="screen">
+    html {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+    }
+    form label {
+      display: block;
+      margin-top: .5rem;
+    }
+    fieldset {
+      border: none;
+    }
+    input[type="text"] {
+      width: 70%;
+      line-height: 1.5rem;
+    }
+    form {
+      margin-left: 25%;
+    }
+    dd,
+    dt {
+      display: block;
+      margin-left: 0;
+    }
+    dd {
+      margin-bottom: 1.5rem;
+    }
+    ul {
+    list-style: none;
+  }
+
+
+  </style> -->
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form action="#" method="get">
+      <fieldset class="address">
+        <dl class="partial one-half left">
+          <dt><label for="first_name">First Name</label></dt>
+          <dd><input type="text" name="first_name" id="first_name"></dd>
+        </dl><!--
+        --><dl class="partial one-half right">
+          <dt><label for="last_name">Last Name</label></dt>
+          <dd><input type="text" name="last_name" id="last_name"></dd>
+        </dl>
+        <dl class="">
+          <dt><label for="address">Address</label></dt>
+          <dd><input id="address" type="text" name="address"></dd>
+        </dl>
+        <dl class="partial city left">
+          <dt><label for="city">City</label></dt>
+          <dd><input id="city" type="text" name="city"></dd>
+        </dl><!--
+        --><dl class="partial state left right">
+          <dt><label for="state">State</label></dt>
+            <dd><select name="state" id="state">
+              <option>AK</option>
+               <option>AL</option>
+               <option>AR</option>
+               <option>AZ</option>
+               <option>CA</option>
+               <option>CO</option>
+               <option>CT</option>
+               <option>DC</option>
+               <option>DE</option>
+               <option>FL</option>
+               <option>GA</option>
+               <option>HI</option>
+               <option>IA</option>
+               <option>ID</option>
+               <option>IL</option>
+               <option>IN</option>
+               <option>KS</option>
+               <option>KY</option>
+               <option>LA</option>
+               <option>MA</option>
+               <option>MD</option>
+               <option>ME</option>
+               <option>MI</option>
+               <option>MN</option>
+               <option>MO</option>
+               <option>MS</option>
+               <option>MT</option>
+               <option>NC</option>
+               <option>ND</option>
+               <option>NE</option>
+               <option>NH</option>
+               <option>NJ</option>
+               <option>NM</option>
+               <option>NV</option>
+               <option>NY</option>
+               <option>OH</option>
+               <option>OK</option>
+               <option>OR</option>
+               <option>PA</option>
+               <option>RI</option>
+               <option>SC</option>
+               <option>SD</option>
+               <option>TN</option>
+               <option>TX</option>
+               <option>UT</option>
+               <option>VA</option>
+               <option>VT</option>
+               <option>WA</option>
+               <option>WI</option>
+               <option>WV</option>
+               <option>WY</option>
+            </select></dd>
+        </dl><!--
+        --><dl class="partial zip right">
+          <dt><label for="zipcode">Zipcode</label></dt>
+          <dd><input type="text" pattern="\d{5}" name="zipcode" id="zipcode"></dd>
+        </dl>
+        <dl class="">
+          <dt><label for="email">Email</label></dt>
+          <dd><input type="email" name="email" placeholder="user@domain.com" id="email"></dd>
+        </dl>
+
+        <dl class="">
+          <dt><label for="phone">Telephone</label></dt>
+          <dd><input type="tel" name="phone" id="phone"></dd>
+        </dl>
+      </fieldset>
+
+      <fieldset class="questionnaire">
+
+        <p>Which of these colors do you like best?</p>
+        <ul>
+          <li><label><input type="radio" name="color" value="Blue" checked>Blue</label></li>
+          <li><label><input type="radio" name="color" value="Red">Red</label></li>
+            <li><label><input type="radio" name="color" value="Yellow">Yellow</label></li>
+        </ul>
+
+        <p>Which of these technologies do you want to learn?</p>
+        <ul>
+          <li><label><input type="checkbox" name="html">HTML</label></li>
+          <li><label><input type="checkbox" name="css">CSS</label></li>
+          <li><label><input type="checkbox" name="ruby">Ruby</label></li>
+          <li><label><input type="checkbox" name="javascript">Javascript</label></li>
+          <li><label><input type="checkbox" name="python">Python</label></li>
+        </ul>
+
+      </fieldset>
+
+      <fieldset class="comments">
+        <dl>
+          <dt><label for="comments">Comments</label></dt>
+          <dd><textarea id="comments" name="comments" rows="6" cols="80"></textarea></dd>
+        </dl>
+      </fieldset>
+
+      <fieldset class="submit">
+        <input type="hidden" name="timestamp" value="2019-05-15">
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </fieldset>
+    </form>
+
+</body>
+</html>

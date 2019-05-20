@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body  {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #545459;
+  background-color: white;
+}
+main{
+  border: solid 2px #999;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* div {
+  box-sizing: border-box;
+} */
+
+h1, h2, h3 {
+  color: #CE4A4A;
+  margin: 20px 0;
+  background-color: inherit;
+  font-weight: bold;
+}
+p {
+  margin: 20px 0;
+  line-height: 2rem;
+}
+.inline_example {
+  padding: 30px;
+  width: 650px;
+  border: 2px dashed gray;
+}
+
+.thirty {
+  margin: 30px;
+}
+.inline_padding {
+  background: green;
+  height: 72px;
+  width: 120px;
+  text-align: center;
+  padding: 25px 0;
+  color: white;
+  margin: 5px;
+  border: 2px solid black;
+}
+a {
+  text-decoration: none;
+  color: #545459;
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+.float-left {
+  float: left;
+  overflow: hidden;
+}
+.float-right {
+  float: right;
+  overflow: hidden;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.div_1 {
+  background-color: blue;
+  color: white;
+}
+.div_2 {
+  margin: 20px;
+  padding: 20px;
+  height: 20px;
+  background-color: green;
+  color: white;
+}
+.div_3 {
+  width: 90px;
+  background-color: red;
+  color: white;
+}
+.div_4 {
+  width: 180px;
+  height: 120px;
+  background-color: pink;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+.box_1 {
+  color: white;
+  background-color: blue;
+}
+.box_2 {
+  color: white;
+  background-color: red;
+}
+.box-container {
+  height: 40px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.box_3 {
+  color: white;
+  background-color: red;
+  width: 40%;
+}
+.box_4 {
+  color: white;
+  background-color: blue;
+  width: 50%;
+}
+.block-anchor {
+  color: white;
+  background-color: blue;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.inline-anchor {
+  display: inline-block;
+  color: white;
+  background-color: blue;
+  margin: 10px;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+}
+.anchor-container {
+  text-align: center;
+}
+section {
+  border-bottom: dashed;
+  color: gray;
+}
+.fl-and-pos h1 {
+  text-align: center;
+}
+
+.floated-box-1 {
+  float: left;
+  width: 50%;
+  padding: 30px 0;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.floated-box-2 {
+  float: left;
+  width: 50%;
+  padding: 30px 0;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+
+}
+.floated-box-3 {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  clear: both;
+
+}
+.code-block {
+  margin-left: 100px;
+}
+.code-block p {
+  line-height: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.code-block p:first-child,
+.code-block p:last-child {
+  text-indent: 0;
+}
+.code-block p {
+  text-indent: 1.5rem;
+}
+li {
+  line-height: 1.75rem;
+  margin-left: 50px;
+  font-style: italic;
+}
+.abs-section {
+  position: relative;
+}
+.position-example-1 {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 25px 50px;
+  position: fixed;
+  display: inline-block;
+  bottom: 40px;
+  left: 30px;
+}
+.position-example-2 {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 25px 70px;
+  position: relative;
+  display: inline-block;
+  bottom: -30px;
+  left: -60px;
+}
+.position-example-3 {
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  padding: 25px 50px;
+  position: absolute;
+  display: inline-block;
+  top: -10px;
+  left: 250px;
+}
