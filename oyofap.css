@@ -30,14 +30,24 @@ h1, h2, h3 {
   background-color: inherit;
   font-weight: bold;
 }
+h1 {
+  font-size: 24px
+}
+h2  {
+  font-size: 20px;
+}
+h3 {
+  font-size: 16px;
+}
 p {
-  margin: 20px 0;
-  line-height: 2rem;
+  margin-bottom: 25px;
+  line-height: 35px;
 }
 .inline_example {
   padding: 30px;
+  margin: 45px;
   width: 650px;
-  border: 2px dashed gray;
+  border: 2px dashed #555;
 }
 
 .thirty {
@@ -48,17 +58,26 @@ p {
   height: 72px;
   width: 120px;
   text-align: center;
-  padding: 25px 0;
+  padding: 30px;
   color: white;
-  margin: 5px;
-  border: 2px solid black;
+}
+.inline_padding_floated {
+  background: green;
+  height: 72px;
+  width: 120px;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  margin: 15px;
+  border: 3px solid darkgreen;
 }
 a {
   text-decoration: none;
-  color: #545459;
+  color: #333;
   display: inline;
   padding: 0;
   margin: 0;
+  background-color: inherit;
 }
 .float-left {
   float: left;
@@ -74,7 +93,7 @@ a {
   display: block;
 }
 .div_1 {
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
 }
 .div_2 {
@@ -86,7 +105,7 @@ a {
 }
 .div_3 {
   width: 90px;
-  background-color: red;
+  background-color: tomato;
   color: white;
 }
 .div_4 {
@@ -99,11 +118,11 @@ a {
 }
 .box_1 {
   color: white;
-  background-color: blue;
+  background-color: dodgerblue;
 }
 .box_2 {
   color: white;
-  background-color: red;
+  background-color: tomato;
 }
 .box-container {
   height: 40px;
@@ -112,17 +131,17 @@ a {
 }
 .box_3 {
   color: white;
-  background-color: red;
+  background-color: tomato;
   width: 40%;
 }
 .box_4 {
   color: white;
-  background-color: blue;
+  background-color: dodgerblue;
   width: 50%;
 }
 .block-anchor {
   color: white;
-  background-color: blue;
+  background-color: dodgerblue;
   display: block;
   margin: 10px;
   padding: 10px;
@@ -131,7 +150,7 @@ a {
 .inline-anchor {
   display: inline-block;
   color: white;
-  background-color: blue;
+  background-color: dodgerblue;
   margin: 10px;
   padding: 20px;
   width: 180px;
@@ -140,7 +159,7 @@ a {
 .anchor-container {
   text-align: center;
 }
-section {
+section:first-child {
   border-bottom: dashed;
   color: gray;
 }
@@ -152,7 +171,7 @@ section {
   float: left;
   width: 50%;
   padding: 30px 0;
-  background-color: red;
+  background-color: tomato;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -161,7 +180,7 @@ section {
   float: left;
   width: 50%;
   padding: 30px 0;
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -171,7 +190,7 @@ section {
   float: left;
   width: 100%;
   padding: 15px 0;
-  background-color: green;
+  background-color: seagreen;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -202,32 +221,34 @@ li {
   position: relative;
 }
 .position-example-1 {
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
   border-radius: 10px;
-  padding: 25px 50px;
+  padding: 25px 35px;
   position: fixed;
-  display: inline-block;
-  bottom: 40px;
+  bottom: 50px;
   left: 30px;
+  width: 225px;
 }
 .position-example-2 {
-  background-color: red;
+  background-color: tomato;
   color: white;
   border-radius: 10px;
-  padding: 25px 70px;
+  padding: 25px 35px;
   position: relative;
-  display: inline-block;
-  bottom: -30px;
-  left: -60px;
+  bottom: -45px;
+  right: 90px;
+  width: 325px;
 }
 .position-example-3 {
   background-color: green;
   color: white;
   border-radius: 10px;
-  padding: 25px 50px;
+  padding: 25px 35px;
+  margin-bottom: 30px;
   position: absolute;
-  display: inline-block;
-  top: -10px;
-  left: 250px;
+  text-align: center;
+  top: -30px;
+  left: 230px;
+  width: 200px;
 }
