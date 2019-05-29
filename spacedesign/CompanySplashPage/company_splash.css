@@ -1,0 +1,70 @@
+@import url('whitespace_reset.css');
+
+body {
+  background-image: url('company_splash_page/bg_body.gif');
+  background-repeat: repeat;
+  margin: 0 auto;
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+header {
+  margin: 150px auto 100px auto;
+  text-align: center;
+}
+main {
+  display: grid;
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  grid-template-rows: 360px 360px;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    "about"
+    "founder";
+  justify-items: center;
+  align-items: center;
+}
+h2 {
+  font-size: 36px;
+  padding: 40px;
+  font-weight: 600;
+}
+h3 {
+  /* padding: 20px; */
+  color: #3E98B2;
+  font-size: 24px;
+  font-weight: 800;
+}
+p {
+  padding: 20px 90px;
+}
+h2::before,
+h2::after {
+  content: "\2022";
+  font-size: 1.4rem;
+  padding: 0 26px 0 24px;
+  vertical-align: 5px;
+}
+.about {
+  grid-area: about;
+}
+.founder {
+  grid-area: founder;
+}
+footer {
+  background-color: #E7E7E7;
+  width: 1000px;
+  padding: 34px 0;
+  margin: 0 auto 130px auto;
+  text-align: center;
+}
+footer img {
+  padding-right: 124px;
+}
+footer img:last-of-type {
+  padding: 0;
+}

@@ -1,0 +1,91 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 960px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #d2dcbf, #FCFEF5);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+.album {
+  margin: 0 auto;
+  grid-template-columns: 600px 360px;
+  display: grid;
+  box-shadow: 0 5px 5px #b5b5b5;
+  color: #3e616f;
+  grid-template-areas:
+    "header header"
+    "masthead masthead"
+    "article1 article1"
+    "article2 figure"
+    "footer footer";
+}
+header {
+  grid-area: header;
+  background-image: url('photo_blog_png/logo.png');
+  background-repeat: no-repeat;
+  margin: 18px 0 0 22px;
+
+}
+h1 {
+  margin: 50px 0 0 120px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #193441;
+  display: inline-block;
+}
+nav {
+  float: right;
+}
+li {
+  display: inline-block;
+}
+a {
+  display: block;
+  background-color: #FCFEF5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 14px 40px;
+  text-decoration: none;
+  color: #98AFA2;
+  margin-top: 72px;
+
+}
+.masthead {
+  grid-area: masthead;
+  background-color: white;
+  width: 100%;
+  padding: 30px 30px 45px 30px;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.article1 {
+  grid-area: article1;
+  background-color: white;
+  padding: 0 30px 0 30px;
+  width: 100%;
+}
+.article2 {
+  grid-area: article2;
+  background-color: white;
+  padding: 0 30px 0 30px;
+  width: 100%;
+}
+p {
+  padding-top: 20px;
+}
+figure {
+  grid-area: figure;
+  background-color: white;
+  padding: 20px 0 50px 0;
+  width: 100%;
+}
+footer {
+  grid-area: footer;
+}

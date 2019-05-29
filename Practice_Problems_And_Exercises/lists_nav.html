@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>nav bar</title>
+  <meta charset="utf-8" />
+  <style media="screen">
+    html {
+      font-size: 20px;
+      margin: 0;
+    }
+    body {
+      padding: 0;
+    }
+
+    nav ul {
+      background-color: yellow;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      color: blue;
+      list-style: none;
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+    }
+
+    nav a {
+      box-sizing: border-box;
+      line-height: 2.5;
+      padding: 0 10px;
+      text-decoration: none;
+    }
+    nav li:focus,
+    nav li:hover {
+      background-color: green;
+      color: yellow;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: yellow;
+      background-color: green;
+    }
+  </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="https://launchschool.com">Home</a></li><li>
+          <a href="https://launchschool.com">Projects</a></li><li>
+          <a href="https://launchschool.com">Team</a></li><li>
+            <a href="https://launchschool.com">Help</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
