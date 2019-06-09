@@ -1,0 +1,115 @@
+@import url('whitespace_reset.css');
+
+body {
+  background-color: #FBD54A;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  box-sizing: border-box;
+}
+main {
+  background-color: #ECECEC;
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 24px;
+  margin: 30px auto 0 auto;
+  box-sizing: border-box;
+  grid-template-areas:
+  "heading heading heading heading"
+  "aurelia chlorelligerum polycaryum sonneborni"
+  "ugandae woodruffi . ."
+}
+h1 {
+  font-size: 38px;
+  color: white;
+}
+h2 {
+  grid-area: heading;
+  font-size: 32px;
+  color: black;
+}
+header {
+  background-color: #2A7EC1;
+  height: 100px;
+  width: 900px;
+  font-size: 38px;
+  padding: 28px 0 36px 28px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px;
+}
+.product {
+  width: 200px;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-y: 15px;
+  background-position-x: 50%;
+  background-color: white;
+  padding: 16px 0 0 0;
+}
+.label {
+  padding: 180px 0 0 16px;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 12px 0 0 16px;
+}
+.aurelia {
+  background-image: url('web_store_catalog/images/aurelia.jpg');
+  grid-area: aurelia;
+  background-size: 70%;
+}
+.aurelia toggle_image:checked {
+  background-position: absolute;
+  /* background-size: a billion percent. */
+}
+.chlorelligerum {
+  background-image: url('web_store_catalog/images/chlorelligerum.jpg');
+  grid-area: chlorelligerum;
+}
+.polycaryum {
+  background-image: url('web_store_catalog/images/polycaryum.jpg');
+  grid-area: polycaryum;
+}
+.sonneborni {
+  background-image: url('web_store_catalog/images/sonneborni.jpg');
+  grid-area: sonneborni;
+  background-size: 80%;
+
+}
+.ugandae {
+  background-image: url('web_store_catalog/images/ugandae.jpg');
+  grid-area: ugandae;
+  background-size: 70%;
+}
+.woodruffi {
+  background-image: url('web_store_catalog/images/woodruffi.jpg');
+  grid-area: woodruffi;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/* input:checked + .product {
+
+} */
+/* width between product images: 15px
+width between product image and main edge: 24/25
+top and bottom margin around h1 in product: 32?;
+ */
